@@ -1,0 +1,19 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.tag-cloud {
+  flex: 1;
+  display: flex;
+  position: relative;
+  left: 320px;
+}
+
+.tag-cloud-content {
+  color: #ffd700;
+  font-size: 20px;
+}

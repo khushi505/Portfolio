@@ -14,6 +14,7 @@ import {
   faSuitcase,
   faBars,
   faClose,
+  faCog,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link, NavLink } from 'react-router-dom'
 
@@ -44,6 +45,15 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
+
+        <NavLink
+          activeclassname="active"
+          className="skill-link"
+          to="/skill"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faCog} color="#4d4d4e" />
+        </NavLink>
         <NavLink
           activeclassname="active"
           className="portfolio-link"
@@ -52,6 +62,7 @@ const Sidebar = () => {
         >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
+
         <NavLink
           activeclassname="active"
           className="contact-link"
@@ -68,6 +79,7 @@ const Sidebar = () => {
           className="close-icon"
         />
       </nav>
+
       <ul>
         <li>
           <a

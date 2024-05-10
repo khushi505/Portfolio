@@ -14,6 +14,7 @@ import './index.scss'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
+  const [activeTab, setActiveTab] = useState('skills')
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
@@ -24,6 +25,10 @@ const About = () => {
       clearTimeout(timeoutId)
     }
   }, [])
+
+  const handleTabClick = (tabName) => {
+    setActiveTab(tabName)
+  }
 
   return (
     <>
@@ -36,39 +41,40 @@ const About = () => {
               idx={15}
             />
           </h1>
-          <p style={{ fontSize: '18px' }}>
+          <p style={{ fontSize: '16px', margin: '-8px' }}>
             I'm a Web developer with expertise in frontend development and have
-            also worked on <br /> full-stack projects.
+            also worked on full-stack projects.
           </p>
-          <p align="LEFT" style={{ fontSize: '18px' }}>
-            I'm confident, curious and eager to learn new things, and
+          <p align="LEFT" style={{ fontSize: '16px' }}>
+            I'm confident, curious, and eager to learn new things, and
             perpetually working on improving my skills.
           </p>
         </div>
+      </div>
 
-        <div className="stage-cube-cont">
-          <div className="cubespinner">
-            <div className="face1">
-              <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
-            </div>
-            <div className="face2">
-              <FontAwesomeIcon icon={faHtml5} color="#F06529" />
-            </div>
-            <div className="face3">
-              <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
-            </div>
-            <div className="face4">
-              <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
-            </div>
-            <div className="face5">
-              <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
-            </div>
-            <div className="face6">
-              <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
-            </div>
+      <div className="stage-cube-cont">
+        <div className="cubespinner">
+          <div className="face1">
+            <FontAwesomeIcon icon={faNodeJs} color="#DD0031" />
+          </div>
+          <div className="face2">
+            <FontAwesomeIcon icon={faHtml5} color="#F06529" />
+          </div>
+          <div className="face3">
+            <FontAwesomeIcon icon={faCss3} color="#28A4D9" />
+          </div>
+          <div className="face4">
+            <FontAwesomeIcon icon={faReact} color="#5ED4F4" />
+          </div>
+          <div className="face5">
+            <FontAwesomeIcon icon={faJsSquare} color="#EFD81D" />
+          </div>
+          <div className="face6">
+            <FontAwesomeIcon icon={faGitAlt} color="#EC4D28" />
           </div>
         </div>
       </div>
+
       <Loader type="pacman" />
     </>
   )
