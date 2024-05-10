@@ -1,0 +1,71 @@
+// Configuration variables
+$banner-height: 200px; // Height of the banner
+$scroll-duration: 8s; // Duration for the scroll animation
+$img-width: 100px; // Width for each image
+
+.banner {
+  overflow: hidden; // Hide content outside of view
+  width: 400%; // Full width of the banner
+  height: $banner-height; // Set the height
+
+  position: relative; // To allow absolute positioning inside
+  right: 280px;
+  top: 70px;
+
+  .banner-inner {
+    display: flex; // Horizontal alignment
+    position: absolute; // Allows absolute positioning
+    width: calc(200%); // Ensure enough space for smooth repetition
+    animation: scroll-horizontal $scroll-duration linear infinite; // Infinite loop with smooth scrolling
+
+    img {
+      width: $img-width; // Set width for each image
+      height: auto; // Maintain aspect ratio
+      object-fit: cover; // Ensure proper fit
+      margin: 0 10px; // Optional spacing between images
+    }
+  }
+}
+
+// Keyframes for horizontal scrolling
+@keyframes scroll-horizontal {
+  0% {
+    transform: translateX(0); // Start at the beginning
+  }
+
+  100% {
+    transform: translateX(-100%); // Scroll the full width to the end
+  }
+}
+
+h1 {
+  color: #ffd700;
+  font-size: 56px;
+  line-height: 53px;
+  margin: 0;
+  font-family: 'Coolvetica';
+  font-weight: 400;
+
+  &:before {
+    content: '<h1>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    margin-top: -40px;
+    left: -15px;
+    opacity: 0.6;
+  }
+
+  &:after {
+    content: '<h1/>';
+    font-family: 'La Belle Aurore', cursive;
+    color: #fff;
+    font-size: 18px;
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 20px;
+    animation: fadeIn 1s 1.7s backwards;
+    opacity: 0.6;
+  }
+}

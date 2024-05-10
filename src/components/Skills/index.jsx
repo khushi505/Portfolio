@@ -152,12 +152,18 @@ const About = () => {
                 <li>
                   <span className="heading">Intern</span>
                   <br />
-                  <span className="inner">Software Engineer at TechCorp</span>
+                  <span className="inner">Obrien Company</span>
                 </li>
                 <li>
-                  <span className="heading">Lead Developer</span>
+                  <span className="heading">Interim Board</span>
                   <br />
-                  <span class="inner">Open Source Project</span>
+                  <span class="inner">Next Tech Lab</span>
+                </li>
+
+                <li>
+                  <span className="heading">Team Lead</span>
+                  <br />
+                  <span class="inner">Student Council</span>
                 </li>
               </ul>
             </div>
@@ -172,14 +178,12 @@ const About = () => {
                 <li>
                   <span className="heading">2020</span>
                   <br />
-                  <span className="inner">
-                    Graduated from St. Patrick's College
-                  </span>
+                  <span className="inner">10th from St. Patrick's College</span>
                 </li>
                 <li>
                   <span className="heading">2022</span>
                   <br />
-                  <span className="inner">Degree from Boston University</span>
+                  <span className="inner">12th from Boston University</span>
                 </li>
                 <li>
                   <span className="heading">2022-2026</span>

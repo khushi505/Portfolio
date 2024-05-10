@@ -11,7 +11,7 @@ import {
   faHome,
   faUser,
   faEnvelope,
-  faSuitcase,
+  faEye,
   faBars,
   faClose,
   faCog,
@@ -56,11 +56,11 @@ const Sidebar = () => {
         </NavLink>
         <NavLink
           activeclassname="active"
-          className="portfolio-link"
-          to="/portfolio"
+          className="work-link"
+          to="/work"
           onClick={() => setShowNav(false)}
         >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
+          <FontAwesomeIcon icon={faEye} color="#4d4d4e" />
         </NavLink>
 
         <NavLink
