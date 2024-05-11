@@ -3,16 +3,42 @@ import './index.scss'
 import { v4 as uuidv4 } from 'uuid'
 import AnimatedLetters from '../AnimatedLetters'
 import Loader from 'react-loaders'
+import blackhole from '../../assets/images/blackhole.png'
+import blinkint from '../../assets/images/blinkint.png'
+import chef1 from '../../assets/images/chef1.png'
+import chef2 from '../../assets/images/chef2.png'
+import currency from '../../assets/images/currency.png'
+import expense from '../../assets/images/expense.png'
+import guess from '../../assets/images/guess.png'
+import howl from '../../assets/images/howl.png'
+// import itask from '../../assets/image/itask.png'
+import joke from '../../assets/images/joke.png'
+import kisan from '../../assets/images/kisan.png'
+import landing from '../../assets/images/landing.png'
+import matchup from '../../assets/images/matchup.png'
+import news from '../../assets/images/news.png'
+import scroller from '../../assets/images/scroller.png'
+import tictac from '../../assets/images/tictac.png'
+import togo from '../../assets/images/togo.png'
 
 // Create a longer sequence with duplicated images
 const images = [
-  'https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&w=1000&q=80',
-  'https://images.unsplash.com/photo-1499856871958-5b9627545d1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80',
-  'https://media.istockphoto.com/photos/the-main-attraction-of-paris-and-all-of-europe-is-the-eiffel-tower-in-picture-id1185953092?k=6&m=1185953092&s=612x612&w=0&h=SNiShskOfwQ7Sys5TX0eb5eBxHobktWUfZGrox5LMyk=',
-  'https://images.unsplash.com/photo-1541963463532-d68292c34b19?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
-  'https://images.ctfassets.net/hrltx12pl8hq/3MbF54EhWUhsXunc5Keueb/60774fbbff86e6bf6776f1e17a8016b4/04-nature_721703848.jpg?fit=fill&w=480&h=270',
-  'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg',
-  'https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aHVtYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80',
+  blackhole,
+  blinkint,
+  chef1,
+  chef2,
+  currency,
+  expense,
+  guess,
+  howl,
+  joke,
+  kisan,
+  landing,
+  matchup,
+  news,
+  scroller,
+  tictac,
+  togo,
 ].map((img) => ({
   id: uuidv4(),
   image: img,
@@ -53,8 +79,7 @@ const Work = () => {
             idx={15}
           />
         </h1>
-        <Banner images={images} speed={5000} />
-        <Banner images={images} speed={5000} />
+        <Banner images={images} speed={5000} className="banner1" />
       </div>
       <Loader type="pacman" />
     </div>
