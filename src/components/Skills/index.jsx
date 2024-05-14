@@ -3,6 +3,7 @@ import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
 import TagCloud from 'TagCloud'
 import './index.scss'
+import Resume from '../../assets/KhushiMalhotra_Resume.pdf'
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -192,6 +193,12 @@ const About = () => {
                 </li>
               </ul>
             </div>
+          </div>
+
+          <div className="flat-button">
+            <a href={Resume} download="KhushiMalhotra_Resume.pdf">
+              Download Resume
+            </a>
           </div>
         </div>
 

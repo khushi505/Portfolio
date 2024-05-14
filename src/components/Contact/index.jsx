@@ -4,6 +4,8 @@ import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
 import './index.scss'
+import Resume from '../../assets/KhushiMalhotra_Resume.pdf'
+import Contactgif from '../../assets/images/Contact-1.gif'
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -53,47 +55,56 @@ const Contact = () => {
           </h1>
 
           <div className="contact-form">
-            <form ref={form} onSubmit={sendEmail}>
-              <ul>
-                <li className="half">
-                  <input placeholder="Name" type="text" name="name" required />
-                </li>
-                <li className="half">
-                  <input
-                    placeholder="Email"
-                    type="email"
-                    name="email"
-                    required
-                  />
-                </li>
-                <li>
-                  <input
-                    placeholder="Subject"
-                    type="text"
-                    name="subject"
-                    required
-                  />
-                </li>
-                <li>
-                  <textarea
-                    placeholder="Message"
-                    name="message"
-                    required
-                  ></textarea>
-                </li>
-                <li>
-                  <input type="submit" className="flat-button" value="SEND" />
-                </li>
-              </ul>
-            </form>
+            <div className="form-container">
+              <form ref={form} onSubmit={sendEmail}>
+                <ul>
+                  <li className="half">
+                    <input
+                      placeholder="Name"
+                      type="text"
+                      name="name"
+                      required
+                    />
+                  </li>
+                  <li className="half">
+                    <input
+                      placeholder="Email"
+                      type="email"
+                      name="email"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <input
+                      placeholder="Subject"
+                      type="text"
+                      name="subject"
+                      required
+                    />
+                  </li>
+                  <li>
+                    <textarea
+                      placeholder="Message"
+                      name="message"
+                      required
+                    ></textarea>
+                  </li>
+                  <li>
+                    <input type="submit" className="flat-button" value="SEND" />
+                  </li>
+                </ul>
+                <div className="flat-button">
+                  <a href={Resume} download="KhushiMalhotra_Resume.pdf">
+                    Download Resume
+                  </a>
+                </div>
+              </form>
+            </div>
+
+            <div className="gif-container">
+              <img src={Contactgif} alt="Contact GIF" className="gif" />
+            </div>
           </div>
-        </div>
-        <div className="info-map">
-          Khushi Malhotra
-          <br />
-          India
-          <br />
-          <span>malhotrakhushi507@gmail.com</span>
         </div>
       </div>
       <Loader type="pacman" />
