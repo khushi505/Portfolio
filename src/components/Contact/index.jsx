@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
 import AnimatedLetters from '../AnimatedLetters'
@@ -52,11 +51,7 @@ const Contact = () => {
               idx={15}
             />
           </h1>
-          <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
-          </p>
+
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
               <ul>
@@ -99,21 +94,6 @@ const Contact = () => {
           India
           <br />
           <span>malhotrakhushi507@gmail.com</span>
-        </div>
-        <div className="map-wrap">
-          <MapContainer center={[27.1767, 78.0081]} zoom={13}>
-            {' '}
-            {/* Centering the map on Agra, India */}
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-            <Marker position={[27.2171, 78.0081]}>
-              {' '}
-              {/* Placing the marker on Agra */}
-              <Popup>
-                Agra is known for the Taj Mahal. You're welcome to visit and
-                enjoy the view!
-              </Popup>
-            </Marker>
-          </MapContainer>
         </div>
       </div>
       <Loader type="pacman" />

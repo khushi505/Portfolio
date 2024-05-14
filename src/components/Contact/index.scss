@@ -18,16 +18,16 @@
       position: relative;
       animation: fadeInUp 2s 2s;
       animation-fill-mode: forwards;
-    }
 
-    li.half {
-      width: 49%;
-      margin-left: 2%;
-      float: left;
-      clear: none;
+      &.half {
+        width: 49%;
+        margin-left: 2%;
+        float: left;
+        clear: none;
 
-      &:first-child {
-        margin-left: 0;
+        &:first-child {
+          margin-left: 0;
+        }
       }
     }
   }
@@ -70,24 +70,15 @@
     float: right;
     text-align: center;
     margin-right: 10px;
+    cursor: pointer;
   }
-}
 
-.map-wrap {
-  background: rgba(8, 253, 216, 0.1);
-  float: right;
-  width: 53%;
-  height: 115%;
-  margin-top: -3%;
-}
-
-.leaflet-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  animation: backInRight 1s 1.2s;
-  animation-fill-mode: forwards;
+  .flat-button:hover {
+    background-color: #ffd700;
+    color: #115173;
+    font-weight: bold;
+    border-color: #ffd700;
+  }
 }
 
 .info-map {

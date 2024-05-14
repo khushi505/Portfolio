@@ -42,12 +42,15 @@ const About = () => {
             />
           </h1>
           <p style={{ fontSize: '16px', margin: '-8px' }}>
-            I'm a Web developer with expertise in frontend development and have
-            also worked on full-stack projects.
+            "I specialize in crafting captivating web experiences, with a focus
+            on dynamic frontend development. Additionally, I bring full-stack
+            proficiency to the table, ensuring seamless integration and
+            functionality across all layers of your project."
           </p>
           <p align="LEFT" style={{ fontSize: '16px' }}>
-            I'm confident, curious, and eager to learn new things, and
-            perpetually working on improving my skills.
+            "I'm driven by a strong sense of confidence and curiosity, always
+            eager to embrace new challenges and expand my skillset through
+            continuous learning."
           </p>
         </div>
       </div>
