@@ -38,14 +38,6 @@
       // animation: fadeIn 0.3s 3s backwards;
       opacity: 0.6;
     }
-
-    img {
-      margin-left: 20px;
-      opacity: 0;
-      width: 32px;
-      height: auto;
-      // animation: rotateIn linear both;
-    }
   }
 
   h2 {
@@ -78,6 +70,24 @@
       font-weight: bold;
     }
   }
+
+  .profile img {
+    width: 300px;
+    position: relative;
+    left: 100%;
+    top: 28%;
+    border-radius: 30px;
+  }
+}
+
+.logo-container {
+  position: relative;
+  top: 85%;
+  left: 94%;
+}
+
+.logo-container img {
+  width: 70px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -100,25 +110,5 @@
     display: block;
     margin: 20px auto 0 auto;
     width: 124px;
-  }
-
-  .logo-container {
-    position: relative;
-    width: 100px;
-    height: auto;
-    top: 50px;
-    right: 0;
-    box-sizing: border-box;
-    margin: auto;
-    left: 0;
-  }
-
-  .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
   }
 }

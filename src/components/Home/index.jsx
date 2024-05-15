@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import Loader from 'react-loaders'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
+import LogoS from '../../assets/images/klogo.png'
 import './index.scss'
+import Profile from '../../assets/images/profilepic.jpeg'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -64,7 +65,14 @@ const Home = () => {
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+
+        <div className="profile">
+          <img src={Profile} alt="" srcset="" />
+        </div>
+      </div>
+
+      <div className="logo-container">
+        <img src={LogoS} alt="" />
       </div>
 
       <Loader type="pacman" />
